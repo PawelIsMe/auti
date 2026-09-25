@@ -1,0 +1,12 @@
+.env
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.idea/
+frontend/node_modules/
+data/*.db
+data/*.db-*
+tests/

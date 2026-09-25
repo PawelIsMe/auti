@@ -1,0 +1,4 @@
+Metody:
+- dostep do internetu,
+- zapis danych do historii, jeśli użytkownik poprosi żeby AI coś zapamietal
+- odczyt danych z historii, jeśli AI nie bedzie wiedziec o co chodzi klientowi
