@@ -29,9 +29,10 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Kopiowanie kodu backendu oraz ewentualnego folderu data
+# Kopiowanie kodu backendu oraz tworzenie pustego folderu data/
 COPY app/ ./app/
-COPY data/ ./data/
+RUN mkdir -p /data
+
 
 # Kopiowanie zbudowanych plików statycznych Reacta do katalogu frontend/dist
 COPY --from=frontend-builder /app/frontend/dist ./frontend/dist
