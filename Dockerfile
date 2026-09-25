@@ -31,7 +31,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Kopiowanie kodu backendu oraz tworzenie pustego folderu data/
 COPY app/ ./app/
-RUN mkdir -p /data
+RUN mkdir -p data
 
 
 # Kopiowanie zbudowanych plików statycznych Reacta do katalogu frontend/dist
